@@ -7,6 +7,7 @@ WORKDIR /app
 COPY ./requirements.txt /app/requirements.txt
 
 # Install dependencies
+RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 COPY ./hotel_booking_prediction /app/hotel_booking_prediction

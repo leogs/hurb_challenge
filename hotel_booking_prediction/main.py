@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 import uvicorn
 
-from routers import prediction
+from hotel_booking_prediction.routers import prediction
 
 app = FastAPI()
 
