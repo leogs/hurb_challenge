@@ -17,7 +17,12 @@ minikube start
 minikube addons enable ingress
 ```
 
-3. Run the run.sh file in the root directory. This file will apply all the kubernetes manifests with the Postgres, MinIO, Mlflow and FastAPI services. All the docker images are already in Dockerhub, so no need to build and push them.
+3. Run the run.sh file in the root directory. This file will apply all the kubernetes manifests with the Postgres, MinIO, Mlflow and FastAPI services. All the docker images are already in Dockerhub, so you don't need to build and push them.
+
+```
+chmod +x run.sh
+./yourscript.sh
+```
 
 4. Since we are using Ingress, you need to add the hosts to your /etc/hosts file with
 
