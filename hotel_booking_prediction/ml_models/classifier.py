@@ -1,5 +1,7 @@
 from catboost import CatBoostClassifier
 
+from ml_models import train
+
 from config import settings
 
 class Classifier:

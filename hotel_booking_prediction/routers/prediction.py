@@ -3,6 +3,7 @@ from fastapi import APIRouter
 from schemas.hotel_booking import HotelBooking
 from pre_processing import pre_processing as prepro
 from ml_models.classifier import Classifier
+from ml_models.train import train_and_evaluate
 
 router = APIRouter()
 
@@ -18,3 +19,8 @@ def predict(data: HotelBooking):
         'probability': prob,
         'features': input_data.iloc[0].to_dict()
     }
+
+@router.post("/train/")
+def train():
+    output = train_and_evaluate()
+    return output
