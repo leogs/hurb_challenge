@@ -47,7 +47,7 @@ minikube tunnel
 6. Now you can try the API endpoints going to your browser and reaching the swagger docs in
 
 ```
-http://api-server.local
+http://api-server.local/docs
 
 ```
 Before sending requests, authenticate using admin as user and password. Security keys and passwords were not properly secured due to time constraints.
