@@ -21,7 +21,7 @@ minikube addons enable ingress
 
 ```
 chmod +x run.sh
-./yourscript.sh
+./run.sh
 ```
 
 4. Since we are using Ingress, you need to add the hosts to your /etc/hosts file with
