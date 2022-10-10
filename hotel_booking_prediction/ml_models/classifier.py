@@ -1,6 +1,6 @@
 from catboost import CatBoostClassifier
 
-from hotel_booking_prediction.config import settings
+from config import settings
 
 class Classifier:
     def __init__(self):

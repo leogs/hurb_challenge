@@ -1,8 +1,8 @@
 from fastapi import APIRouter
 
-from hotel_booking_prediction.schemas.hotel_booking import HotelBooking
-from hotel_booking_prediction.pre_processing import pre_processing as prepro
-from hotel_booking_prediction.ml_models.classifier import Classifier
+from schemas.hotel_booking import HotelBooking
+from pre_processing import pre_processing as prepro
+from ml_models.classifier import Classifier
 
 router = APIRouter()
 

@@ -1,7 +1,7 @@
 import pandas as pd
 
-from hotel_booking_prediction.pre_processing import cat_features as cat
-from hotel_booking_prediction.pre_processing import num_features as num
+from pre_processing import cat_features as cat
+from pre_processing import num_features as num
 
 def get_cat_features() -> list:
     return ['hotel',
