@@ -46,3 +46,19 @@ http://api-server.local
 
 ```
 Before sending requests, authenticate using admin as user and password. Security keys and passwords were not properly secured due to time constraints.
+
+To train the model and save the metrics on Mlflow, send a post request to:
+
+```
+http://api-server.local/train
+
+```
+
+To make predictions send requests to:
+
+```
+http://api-server.local/predict
+
+```
+
+The input schema is described in the API docs.
